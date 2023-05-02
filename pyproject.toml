@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "brain_games"}]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.10"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
