@@ -4,5 +4,6 @@ from random import randint
 
 
 def is_calc():
-    is_greeting()
+    temp = is_greeting()
     print('What is the result of the expression?')
+    print(f'Hello, {temp}')
