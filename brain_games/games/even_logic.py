@@ -1,4 +1,4 @@
-from brain_games.template import is_greeting
+from brain_games.games.template import is_greeting
 import prompt
 from random import randint
 
