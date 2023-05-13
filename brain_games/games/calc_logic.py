@@ -1,12 +1,12 @@
-from brain_games.games.template import is_greeting, wrong_answer
+from brain_games.games.template import is_greeting, wrong_answer, calc_desc
 import prompt
 from random import randint
 from random import choice
 
 
 def is_calc():
-    temp = is_greeting()
-    print('What is the result of the expression?')
+    name = is_greeting()
+    calc_desc()
     exprssn = ['+', '*', '-']
     count_correct = 0
     while count_correct < 3:
@@ -22,7 +22,7 @@ def is_calc():
                 count_correct += 1
             else:
                 print(f"'{ans}' {wrong_answer()} '{pluse}'")
-                print(f"Let's try again, {temp}!")
+                print(f"Let's try again, {name}!")
                 break
         elif r_exprssn == '-':
             minus = r_num - r_num2
@@ -31,7 +31,7 @@ def is_calc():
                 count_correct += 1
             else:
                 print(f"'{ans}' {wrong_answer()} '{minus}'")
-                print(f"Let's try again, {temp}!")
+                print(f"Let's try again, {name}!")
                 break
         elif r_exprssn == '*':
             multiply = r_num * r_num2
@@ -40,7 +40,7 @@ def is_calc():
                 count_correct += 1
             else:
                 print(f"'{ans}' {wrong_answer()} '{multiply}'")
-                print(f"Let's try again, {temp}!")
+                print(f"Let's try again, {name}!")
                 break
     if count_correct == 3:
-        print(f'Congratulations, {temp}!')
+        print(f'Congratulations, {name}!')

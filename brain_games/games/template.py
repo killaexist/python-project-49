@@ -8,5 +8,17 @@ def is_greeting():
     return name
 
 
+def even_desc():
+    print('Answer "yes" if the number is even, otherwise answer "no"')
+
+
+def calc_desc():
+    print('What is the result of the expression?')
+
+
+def gcd_desc():
+    print('Find the greatest common divisor of given numbers.')
+
+
 def wrong_answer():
     return "is wrong answer ;(. Correct answer was"
