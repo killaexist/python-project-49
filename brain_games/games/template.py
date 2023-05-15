@@ -20,5 +20,9 @@ def gcd_desc():
     print('Find the greatest common divisor of given numbers.')
 
 
+def progression_desc():
+    print('What number is missing in the progression?')
+
+
 def wrong_answer():
     return "is wrong answer ;(. Correct answer was"
