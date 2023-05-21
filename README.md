@@ -9,3 +9,5 @@ https://asciinema.org/a/fOnc0PpFN3OxZKHURimEkd1D0 - Even Game
 https://asciinema.org/a/iPNfvBNY4YJ3EEJcYQMQw4IUp - Calculator Game
 
 https://asciinema.org/a/DXwHKxZcxbxbJ3VwK362GDwNL - Gcd Game
+
+https://asciinema.org/a/4ABndVajlsDc0xsqJyp3nvsKF - Progression Game
