@@ -24,5 +24,9 @@ def progression_desc():
     print('What number is missing in the progression?')
 
 
+def prime_desc():
+    print('Answer "yes" if the number is prime, otherwise answer "no"')
+
+
 def wrong_answer():
     return "is wrong answer ;(. Correct answer was"
