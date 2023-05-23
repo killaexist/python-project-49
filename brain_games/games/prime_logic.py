@@ -7,38 +7,36 @@ def is_prime():
     name = is_greeting()
     prime_desc
     count_correct = 0
+    count_prime = 0
     while count_correct < 3:
         r_num = randint(0, 99)
         print(f'Question: {r_num}')
         ans = prompt.string('Your answer: ')
         for prime in range(2, r_num):
-            if r_num % num == 0 and ans == 'no' or r_num % num != 0 and ans == 'yes':
-                count_correct += 1
-                print('Correct!')
+            if r_num % prime == 0:
+                count_prime += 1
                 break
-            elif r_num % prime == 0 and ans == 'yes':
-                print(f"'yes' {wrong_answer()} 'no'")
-                print(f"Let's try again, {name}!")
-                count_correct += 5
-                break
-            elif r_num % prime != 0 and ans == 'yes':
-                count_correct += 1
-                print('Correct!')
-                break
-            elif r_num % prime != 0 and ans == 'no':
-                print(f"'no' {wrong_answer()} 'yes'")
-                print(f"Let's try again, {name}!")
-                count_correct += 5
-                break
-            else:
-                print(f"'{ans}' {wrong_answer()} 'yes'")
-                print(f"Let's try again, {name}")
-                break
-
-        if count_correct > 3:
+        if count_prime == 1 and ans == 'no':
+            print('Correct!')
+            count_prime = 0
+            count_correct += 1
+        elif count_prime == 1 and ans == 'yes':
+            print(f"'{ans}' {wrong_answer()} 'no'")
+            print(f"Let's try again, {name}!")
             break
-        elif count_correct == 3:
-            print(f'Congratulations, {name}!')
+        elif count_prime == 0 and ans == 'yes':
+            print('Correct!')
+            count_prime = 0
+            count_correct += 1
+        elif count_prime == 0 and ans == 'no':
+            print(f"'{ans}' {wrong_answer()} 'yes'")
+            print(f"Let's try again, {name}!")
+            break
+    if count_correct == 3:
+        print(f'Congratulations, {name}!')
+            
+
+
 
 
 
