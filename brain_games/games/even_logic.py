@@ -1,4 +1,4 @@
-from brain_games.games.template import is_greeting, even_desc, wrong_answer
+from brain_games.games.template import is_greeting, even_desc, wrong_ans
 import prompt
 from random import randint
 
@@ -15,17 +15,17 @@ def is_even():
             count_correct += 1
             print('Correct!')
         elif r_num % 2 != 0 and ans == 'yes':
-            print(f"'{ans}' {wrong_answer()} 'no'")
+            print(f"'{ans}' {wrong_ans()} 'no'")
             print(f"Let's try again, {name}!")
             count_correct = 0
             break
         elif r_num % 2 == 0 and ans == 'no':
-            print(f"'{ans}' {wrong_answer()} 'yes'")
+            print(f"'{ans}' {wrong_ans()} 'yes'")
             print(f"Let's try again, {name}!")
             count_correct = 0
             break
         else:
-            print(f"'{ans}' {wrong_answer()} 'yes'")
+            print(f"'{ans}' {wrong_ans()} 'yes'")
             print(f"Let's try again, {name}")
             count_correct = 0
             break

@@ -1,4 +1,4 @@
-from brain_games.games.template import is_greeting, gcd_desc, wrong_answer
+from brain_games.games.template import is_greeting, gcd_desc, wrong_ans
 import prompt
 from random import randint
 
@@ -21,7 +21,7 @@ def is_gcd():
             count_correct += 1
             list_divider = []
         else:
-            print(f"'{ans}' {wrong_answer()} '{max(list_divider)}'")
+            print(f"'{ans}' {wrong_ans()} '{max(list_divider)}'")
             print(f"Let's try again, {name}!")
             break
     if count_correct == 3:

@@ -1,6 +1,6 @@
 import prompt
 from random import randint
-from brain_games.games.template import wrong_answer, is_greeting, prime_desc
+from brain_games.games.template import wrong_ans, is_greeting, prime_desc
 
 
 def is_prime():
@@ -21,7 +21,7 @@ def is_prime():
             count_prime = 0
             count_correct += 1
         elif count_prime == 1 and ans == 'yes':
-            print(f"'{ans}' {wrong_answer()} 'no'")
+            print(f"'{ans}' {wrong_ans()} 'no'")
             print(f"Let's try again, {name}!")
             break
         elif count_prime == 0 and ans == 'yes':
@@ -29,14 +29,8 @@ def is_prime():
             count_prime = 0
             count_correct += 1
         elif count_prime == 0 and ans == 'no':
-            print(f"'{ans}' {wrong_answer()} 'yes'")
+            print(f"'{ans}' {wrong_ans()} 'yes'")
             print(f"Let's try again, {name}!")
             break
     if count_correct == 3:
         print(f'Congratulations, {name}!')
-            
-
-
-
-
-
