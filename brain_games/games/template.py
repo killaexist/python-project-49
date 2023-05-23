@@ -20,7 +20,7 @@ def gcd_desc():
     print('Find the greatest common divisor of given numbers.')
 
 
-def progression_desc():
+def prgrssn_desc():
     print('What number is missing in the progression?')
 
 
@@ -28,5 +28,5 @@ def prime_desc():
     print('Answer "yes" if the number is prime, otherwise answer "no"')
 
 
-def wrong_answer():
+def wrong_ans():
     return "is wrong answer ;(. Correct answer was"
