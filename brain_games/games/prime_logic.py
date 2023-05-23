@@ -5,7 +5,7 @@ from brain_games.games.template import wrong_ans, is_greeting, prime_desc
 
 def is_prime():
     name = is_greeting()
-    prime_desc
+    prime_desc()
     count_correct = 0
     count_prime = 0
     while count_correct < 3:
