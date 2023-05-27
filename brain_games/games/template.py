@@ -25,7 +25,7 @@ def prgrssn_desc():
 
 
 def prime_desc():
-    print('Answer "yes" if the number is prime, otherwise answer "no".')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
 def wrong_ans():
