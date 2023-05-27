@@ -9,7 +9,7 @@ def is_greeting():
 
 
 def even_desc():
-    print('Answer "yes" if the number is even, otherwise answer "no"')
+    print('Answer "yes" if the number is even, otherwise answer "no".')
 
 
 def calc_desc():
@@ -25,7 +25,7 @@ def prgrssn_desc():
 
 
 def prime_desc():
-    print('Answer "yes" if the number is prime, otherwise answer "no"')
+    print('Answer "yes" if the number is prime, otherwise answer "no".')
 
 
 def wrong_ans():
